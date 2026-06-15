@@ -95,7 +95,7 @@ Use a compact bilingual form when appropriate:
 
 Keep it concrete. Good examples:
 
-- `用 DeepSeek flash 将 App Store 评价转成 SEO/GEO 友好的产品洞察页 | Turn App Store reviews into SEO/GEO-friendly product insights with DeepSeek flash.`
+- `把 App Store 评价变成产品研究证据，发现痛点、机会和版本风险 | Turn App Store reviews into product research evidence: pain points, opportunities, and version risks.`
 - `把任意资料整理成 NotebookLM 可用知识包 | Turn messy sources into NotebookLM-ready knowledge packs.`
 
 Topics should be narrow and useful:
