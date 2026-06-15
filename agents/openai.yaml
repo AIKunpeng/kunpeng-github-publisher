@@ -1,3 +1,3 @@
 display_name: Kunpeng GitHub Publisher
-short_description: Polish and publish Kunpeng repos with README, About, topics, verification, PR, and merge.
-default_prompt: Rewrite this repository for GitHub publication, update About/topics, verify it, and merge the PR to main when clean.
+short_description: Polish and publish Kunpeng repos with Chinese-first bilingual README, About, topics, verification, PR, and merge.
+default_prompt: Rewrite this repository for GitHub publication with a Chinese-first bilingual README, update About/topics, verify it, and merge the PR to main when clean.

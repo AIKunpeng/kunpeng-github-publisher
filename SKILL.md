@@ -2,9 +2,10 @@
 name: kunpeng-github-publisher
 description: |
   Use when publishing or polishing a GitHub repository for a Kunpeng-owned project:
-  rewrite public READMEs, set bilingual GitHub About descriptions, choose topics,
-  add screenshots and badges, verify deploy/install paths, create PRs, and merge
-  verified changes to main. Trigger on requests like "发布到 GitHub", "开源",
+  rewrite public READMEs as Chinese-first bilingual product pages, set bilingual
+  GitHub About descriptions, choose topics, add screenshots and badges, verify
+  deploy/install paths, create PRs, and merge verified changes to main.
+  Trigger on requests like "发布到 GitHub", "开源",
   "重写 README", "设置 About", "优化 GitHub repo", "release this repo", or
   "make this project installable/attractive on GitHub".
 ---
@@ -25,15 +26,18 @@ Copyright (c) 鲲鹏
    - `README.md`, `package.json` / project metadata, screenshots, examples, docs, license, deploy scripts, test scripts.
    - GitHub remote state via `gh repo view --json name,description,homepageUrl,repositoryTopics,url`.
 2. Decide the public positioning:
-   - One-line hook in Chinese and English.
+   - One-line hook in Chinese and English, with the Chinese version first.
    - Target users and why they should try it now.
    - Clear boundary between product value, technical architecture, and private/local setup.
 3. Rewrite or patch README as a product page:
-   - Chinese first, English second unless the repo is explicitly English-first.
+   - `README.md` is the GitHub front door. For Kunpeng-owned repos, it must be Chinese-first and bilingual by default.
+   - Put Chinese first, then English. Do this unless the user explicitly asks for English-only or the repo has a documented non-Kunpeng upstream requirement.
+   - A separate `README.zh-CN.md` is allowed, but it does not satisfy this requirement by itself; the default `README.md` must show Chinese first.
+   - English can be a full lower section anchored by `# English`, a linked `README.en.md`, or a compact mirrored section, but install/try, verification, limits, and license/access expectations must be understandable to English readers.
    - Put hook, CTAs, badges, screenshot, feature list, quick start, examples, verification, limitations, and troubleshooting near the top.
    - Use real screenshots or output samples when available; do not invent screenshots.
 4. Set GitHub About:
-   - Use bilingual description when the user asks or the repo targets both Chinese and English audiences.
+   - Use a compact bilingual description by default for Kunpeng-owned public repos, Chinese first and English second.
    - Add homepage URL when there is a live demo.
    - Add focused topics; avoid topic spam.
 5. Verify what the README promises:
@@ -47,6 +51,16 @@ Copyright (c) 鲲鹏
    - In the final response, include the PR URL and merge commit.
 
 ## README Standard
+
+### Language Gate
+
+For Kunpeng-owned public repositories, `README.md` must be Chinese-first bilingual before release:
+
+- First viewport: project name, Chinese value proposition, English value proposition, badges/links, and a visible language switch such as `**中文** | [English](#english)`.
+- Main body: Chinese sections first, written as the default reader experience.
+- English access: provide a substantive English section or linked English README. At minimum, English readers must understand what it does, how to try/install it, what is verified, and the main limits/prerequisites.
+- Translation files such as `README.zh-CN.md` and `README.en.md` may exist, but the GitHub default `README.md` still has to open with Chinese first unless the user explicitly approved a different audience.
+- If `README.md` is English-only, English-first, or relies on a separate Chinese file for the Chinese experience, stop and fix it before opening/merging the release PR.
 
 Public README must answer five questions fast:
 
@@ -75,6 +89,7 @@ Recommended structure:
 ## 样例输出
 ## 快速开始
 ## 部署 / API / Skill
+## 实测验证
 ## 限制与边界
 ## Troubleshooting
 ## 关于鲲鹏
@@ -87,7 +102,7 @@ Recommended structure:
 
 ## GitHub About Standard
 
-Use a compact bilingual form when appropriate:
+Use a compact bilingual form by default for Kunpeng-owned public repos:
 
 ```text
 中文短描述 | English short description.
@@ -123,6 +138,7 @@ Use `kunpeng-profile` as the source of truth for bios and assets. Do not invent 
 
 Before claiming done:
 
+- `README.md` is Chinese-first bilingual by default; a separate `README.zh-CN.md` alone is not enough.
 - README has no TODO/placeholders.
 - Screenshots and links exist.
 - `LICENSE` exists or the repo intentionally omits one.
@@ -136,4 +152,5 @@ Before claiming done:
 - Do not publish secrets, `.env.local`, private paths, cache data, tokens, or runtime databases.
 - Do not overpromise current features; mark roadmap items clearly.
 - Do not bury setup failures in the README; make prerequisites explicit.
+- Do not treat Chinese-first bilingual README work as optional polish for Kunpeng-owned GitHub releases.
 - Do not leave a verified PR dangling when the user expects publication.
