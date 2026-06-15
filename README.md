@@ -49,16 +49,6 @@ npx skills add AIKunpeng/kunpeng-github-publisher
 
 `kunpeng-github-publisher` is an Agent Skill for GitHub release polish. It helps turn working projects into public repositories with a clear README, bilingual About text, useful topics, real verification, and a complete PR-to-main publishing flow.
 
-## About Kunpeng
-
-鲲鹏 / Joe is a practical AI product and workflow builder. He turns frontier AI changes into usable workflows, product judgment, AI coding practice, and GEO / AI-marketing methods.
-
-- Website: https://kunpeng.ai
-- Blog: https://blog.kunpeng.ai
-- Kunpeng tools and recommendations: https://tuijian.kunpeng.ai/
-- X: https://x.com/
-- GitHub: https://github.com/AIKunpeng/
-
 <!-- kunpeng-profile:start -->
 ## 关于鲲鹏
 
