@@ -37,7 +37,7 @@ Copyright (c) 鲲鹏
    - Put Chinese first, then English. Do this unless the user explicitly asks for English-only or the repo has a documented non-Kunpeng upstream requirement.
    - A separate `README.zh-CN.md` is allowed, but it does not satisfy this requirement by itself; the default `README.md` must show Chinese first.
    - English can be a full lower section anchored by `# English`, a linked `README.en.md`, or a compact mirrored section, but install/try, verification, limits, and license/access expectations must be understandable to English readers.
-   - Build a scan-friendly composition: language switch, real hero media, short story hook, proof strip, compact badges, "what/why", feature matrix, fastest quick start, expandable manual setup, usage, workflow/architecture, verification, limitations, and trust links.
+   - Build a scan-friendly composition: language switch, real hero media, short story hook, proof strip, compact badges, "what/why", feature matrix, fastest quick start, expandable manual setup, usage, product tour, compatibility/ecosystem catalogs, workflow/architecture, verification, limitations, and trust links.
    - Use real screenshots or output samples when available; do not invent screenshots.
 4. Set GitHub About:
    - Use a compact bilingual description by default for Kunpeng-owned public repos, Chinese first and English second.
@@ -73,6 +73,8 @@ This skill is grounded in GitHub's own repository presentation surfaces:
 Use official docs first when this guidance conflicts with a blog checklist.
 
 Reference case to learn from, not copy blindly: `santifer/career-ops` presents its README as a compact launch page. It leads with language access, a real hero image, a three-line origin story, earned external proof, a demo, quantified outcomes, focused badges, then moves into what it is, features, quick start, usage, workflow, structure, stack, disclaimer, and contact. Reuse that ordering logic when it fits a Kunpeng repo, but never invent press, community, download, star, user-success, or usage claims.
+
+Reference case for complex products: `nexu-io/open-design` treats its README as a product map for a large ecosystem. It uses release/CTA notices, a strong product-tour section, grouped demo galleries, platform compatibility tables, multi-path quick start, agent/MCP usage, skills/design-system/plugin catalogs, architecture and security notes, roadmap, community/contribution tables, maintainers, repository activity, and lineage/provenance. Reuse this as a modular checklist for Kunpeng repos with many surfaces, but never copy scale numbers, support matrices, paid-service claims, community claims, security guarantees, or third-party lineage unless verified in the current repo.
 
 ## README Standard
 
@@ -118,6 +120,18 @@ Use a README layout that works as a product page and as a technical document:
 - Put privacy, data ownership, costs, third-party terms, "not a hosted service", and "does not do X" boundaries in a visible limitations/disclaimer section when relevant.
 - Keep visual assets purposeful. A hero image, demo GIF, logos, badges, and charts should prove the product or status; they should not become decoration or borrowed authority.
 
+### Complex Product Catalog Gate
+
+Use this when the repo is more than a single app/library: multi-platform apps, agent ecosystems, plugin/template catalogs, design systems, media pipelines, MCP servers, self-hosted stacks, or projects with substantial community/contribution surfaces.
+
+- Add a product tour before deep internals. Group screenshots/demos by user surface or artifact type, and give each item a one-line result: entry app, studio/editor, dashboard, plugin marketplace, generated output, API, CLI, MCP, mobile/desktop view, etc.
+- Add a compatibility matrix when the product runs across platforms, agents, providers, operating systems, deployment modes, or package managers. Columns should be concrete: target, status, install command, verification command, and known limits.
+- Add ecosystem catalogs for skills, plugins, templates, design systems, providers, examples, or integrations. Use counts only when generated from the repo or freshly verified; otherwise say "many" or link to the directory. Good columns: item, category/mode, audience, output, source path.
+- Offer quick starts by persona/path: desktop or hosted app, CLI/agent-only, Docker/self-host, from-source developer path. Put the recommended path first and give each path a success check.
+- Show architecture and security together when the repo has a daemon, MCP server, proxy, local database, credentials, generated artifacts, or network boundary. Prefer a compact diagram/table, link to the authoritative deep doc, and avoid duplicating drift-prone storage or secret-handling details.
+- Include roadmap, community, contribution, maintainer, and provenance sections when the repo invites external work or bundles third-party assets. Provenance should name upstream projects, license boundaries, and what was adapted or bundled.
+- Keep catalog density under control: use tables for scanning, `<details>` for long inventories, and deep docs for exhaustive lists. The README should orient a newcomer, not become the whole manual.
+
 Recommended structure:
 
 ```markdown
@@ -161,9 +175,14 @@ Recommended structure:
 </details>
 
 ## 使用方式
+## 产品巡游 / Demo
+## 平台兼容 / 生态目录
 ## 工作流 / 原理
+## 架构与安全模型
 ## 项目结构
 ## 部署 / API / Skill
+## 路线图 / 社区 / 贡献
+## 来源谱系 / License 边界
 ## 实测验证
 ## 限制、隐私与边界
 ## Troubleshooting
@@ -179,7 +198,7 @@ Recommended structure:
 
 - Prefer one real screenshot, demo GIF, terminal transcript, API response, generated artifact, or hosted demo near the top.
 - Every screenshot or sample must match a current verified state. Do not use mock images unless clearly labelled as design mockups.
-- Quantified claims should be current and sourced: examples include number of processed items, generated artifacts, installed versions, benchmark results, or published case studies. If the repo cannot prove a number, use a verified command/output instead.
+- Quantified claims should be current and sourced: examples include number of processed items, generated artifacts, installed versions, compatibility targets, catalog counts, benchmark results, or published case studies. If the repo cannot prove a number from code, generated metadata, tests, release artifacts, or docs, use a verified command/output instead.
 - For CLI/tools, include a short successful command transcript and a failure/troubleshooting example.
 - For websites/apps, include live URL, deployment target, health/API check, and a desktop/mobile screenshot when feasible.
 - Keep README comfortably below GitHub's 500 KiB render-truncation limit; if docs grow large, split deeper material into `docs/` and link it.
@@ -226,6 +245,7 @@ Avoid generic topics like `tool`, `website`, `ai` unless they add discoverabilit
 - GitHub issue/PR templates docs: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates
 - Open Source Guides starting a project: https://opensource.guide/starting-a-project/
 - Reference README composition: https://github.com/santifer/career-ops
+- Reference complex product catalog: https://github.com/nexu-io/open-design
 
 ## Kunpeng Profile Block
 
@@ -258,6 +278,7 @@ Before claiming done:
 - `README.md` is Chinese-first bilingual by default; a separate `README.zh-CN.md` alone is not enough.
 - README first viewport passes the stranger test: value, audience, action, proof, trust.
 - README composition is scan-friendly: proof before internals, feature table for multi-capability products, fastest path before manual setup, and workflow/structure after quick start.
+- Complex products have catalog sections when relevant: product tour, compatibility matrix, ecosystem catalogs, architecture/security model, roadmap/community, and provenance/license boundaries.
 - README has no TODO/placeholders.
 - Screenshots, demos, samples, and links exist or are explicitly marked not applicable.
 - `LICENSE` exists or the repo intentionally omits one.
@@ -272,7 +293,7 @@ Before claiming done:
 
 - Do not publish secrets, `.env.local`, private paths, cache data, tokens, or runtime databases.
 - Do not overpromise current features; mark roadmap items clearly.
-- Do not cargo-cult press logos, community badges, star charts, download counts, or success metrics from reference projects.
+- Do not cargo-cult press logos, community badges, star charts, download counts, catalog counts, compatibility matrices, paid-service promos, or success metrics from reference projects.
 - Do not bury setup failures in the README; make prerequisites explicit.
 - Do not treat Chinese-first bilingual README work as optional polish for Kunpeng-owned GitHub releases.
 - Do not create performative community files for a repo that is not ready for contributors; explain the posture instead.
