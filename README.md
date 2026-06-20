@@ -14,6 +14,7 @@
 ## 它会帮你做什么
 
 - 重写或修补默认 `README.md`，让它成为中文优先、中英双语的产品页，而不是开发日志
+- 优化 README 的内容编排：真实截图/演示、三句价值叙事、可验证证明、功能矩阵、最快路径、折叠式手动安装、工作流、结构和边界
 - 写中英双语 GitHub About 描述，设置 homepage 和 focused topics
 - 检查首屏是否能让陌生人在 60 秒内理解：价值、受众、行动、证据、信任
 - 检查截图、徽章、安装步骤、API 示例、Troubleshooting 和 social preview
@@ -43,9 +44,10 @@ npx skills add AIKunpeng/kunpeng-github-publisher
 1. Inspect repo state and existing metadata.
 2. Rewrite the default `README.md` with a Chinese-first bilingual structure by default.
 3. Apply the first-viewport stranger test: value, audience, action, proof, trust.
-4. Update GitHub About, homepage, topics, badges, social-preview guidance, and community-health posture.
-5. Run project-specific verification.
-6. Create a PR and merge verified changes into `main` unless explicitly held.
+4. Shape the README as a scan-friendly product page: proof before internals, fastest path before manual setup, workflow and structure after quick start.
+5. Update GitHub About, homepage, topics, badges, social-preview guidance, and community-health posture.
+6. Run project-specific verification.
+7. Create a PR and merge verified changes into `main` unless explicitly held.
 
 ## README Language Gate
 
@@ -64,6 +66,7 @@ The skill now checks the whole repository presentation, not only the README:
 
 - About/homepage/topics are concrete, bilingual where appropriate, and discoverable.
 - README first viewport contains a real CTA and proof: screenshot, demo, sample output, CI, or verified command.
+- README uses a deliberate composition: real hero media or screenshot, short value story, proof strip, compact badges, feature table, fastest quick start, expandable advanced setup, usage, workflow, project structure, and visible limits.
 - License is present for open-source repos, or absence is treated as a blocker.
 - External-contributor projects get community-health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, issue templates, and PR template.
 - Social preview is set when possible, or a manual GitHub Settings follow-up is recorded.
