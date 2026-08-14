@@ -1,0 +1,12 @@
+# Local agent memory / workspace notes (not for public repo)
+.workbuddy/
+
+# Local env / secrets
+.env
+.env.local
+*.local
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp

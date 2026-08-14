@@ -80,21 +80,19 @@ The skill now checks the whole repository presentation, not only the README:
 <!-- kunpeng-profile:start -->
 ## 关于鲲鹏
 
-鲲鹏（乔向阳 / Joe）是一位实践型 AI 产品与内容创作者，长期把前沿 AI 变化转译成可复用的工作流、产品判断、AI 编程实践、AI 搜索实践和 GEO/AI 营销方法。
+鲲鹏是一位实践型 AI 产品与内容创作者，长期把前沿 AI 变化转译成可复用的工作流、产品判断、AI 编程实践、AI 搜索实践和 GEO/AI 营销方法。
 
 - 个人网站: https://kunpeng.ai
 - 博客: https://blog.kunpeng.ai
-- 乔木推荐: https://tuijian.kunpeng.ai
-- X: https://x.com/
+- 鲲鹏推荐: https://tuijian.kunpeng.ai
 - GitHub: https://github.com/AIKunpeng/
-- 微信公众号: 鲲鹏推荐看
 
 ### 支持与关注
 
-| 打赏支持 | 微信公众号 |
-|---|---|
-| <img src="assets/kunpeng-profile/kunpeng_reward_qr.png" alt="鲲鹏打赏二维码" width="180" /> | <img src="assets/kunpeng-profile/kunpeng_wechat_public_account_qr.jpg" alt="鲲鹏推荐看公众号二维码" width="180" /> |
-| 感谢支持乔木持续分享 AI 实践 | 扫码关注「鲲鹏推荐看」 |
+| 打赏支持 |
+|---|
+| <img src="assets/kunpeng-profile/kunpeng_reward_qr.png" alt="鲲鹏打赏二维码" width="180" /> |
+| 感谢支持鲲鹏持续分享 AI 实践 |
 
 <!-- kunpeng-profile:end -->
 

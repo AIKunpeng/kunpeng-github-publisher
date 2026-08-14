@@ -15,10 +15,9 @@ description: |
 
 Turn a working project into a GitHub repository people can understand, try, star, install, and trust.
 
-Copyright (c) 鲲鹏
+Copyright (c) Kunpeng
 
-- X: https://x.com/
-- GitHub: https://github.com/AIKunpeng/
+- GitHub: https://github.com/AIKunpeng
 - Profile source: `~/.agents/skills/kunpeng-profile`
 
 ## Core Workflow
@@ -254,10 +253,7 @@ For Kunpeng-owned public repos, include profile/support links by default:
 - `kunpeng.ai`
 - `blog.kunpeng.ai`
 - `tuijian.kunpeng.ai`
-- X `@`
 - GitHub `@AIKunpeng`
-- WeChat public account `鲲鹏推荐看`
-
 Use `kunpeng-profile` as the source of truth for bios and assets. Do not invent personal claims.
 
 ## Community Health Standard
